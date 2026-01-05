@@ -1,0 +1,11 @@
+
+services:
+  url-shortener:
+    build: .
+    container_name: url-shortener-container
+    ports:
+      - "8080:8080"
+    volumes:
+      # Maps the 'db_data' folder on your laptop to the '/app/data' folder inside Docker
+      - ./db_data:/app/data
+    restart: always
