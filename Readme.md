@@ -99,7 +99,7 @@ Added `password` column.
 - **Logic:** If URL has password and request password matches -> Redirect. Else -> 401/403 Error.
 
 ### Q15: List All URLs
-Implemented `GET /api/urls/user/{userId}` to list all URLs belonging to a specific user.
+Implemented `GET /users/{userId}` to list all URLs belonging to a specific user.
 
 ### Q16 [BONUS]: Health Endpoint
 Implemented `/health` endpoint.
